@@ -5,7 +5,7 @@ function H3({
     children: React.ReactNode
 }) {
     return (
-        <h3 className='scroll-m-20 text-xl font-medium tracking-tight'>{children}</h3>
+        <h3 className='scroll-m-20 text-xl font-normal text-muted-foreground tracking-tight leading-normal'>{children}</h3>
     )
 }
 

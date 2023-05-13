@@ -3,7 +3,7 @@ import { Github, Twitter } from "lucide-react"
 
 function Footer() {
     return (
-        <div className="my-5">
+        <div className="my-6">
             <Container>
                 <div className="flex justify-between items-center">
                     <p>Developed with Love@2023</p>

@@ -9,7 +9,7 @@ import H2 from "../Typo/H2"
 
 function FaqSection() {
     return (
-        <div className="my-10 sm:my-12">
+        <div className="my-16 sm:my-20">
             <Container>
                 <div className="mb-2 sm:mb-4">
                     <H2>Frequently Asked Question</H2>
