@@ -12,7 +12,7 @@ function FaqSection() {
         <div className="my-16 sm:my-20">
             <Container>
                 <div className="mb-2 sm:mb-4">
-                    <H2>Frequently Asked Question</H2>
+                    <H2>{"Frequently Asked Question"}</H2>
                 </div>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
@@ -24,7 +24,7 @@ function FaqSection() {
                     <AccordionItem value="item-2">
                         <AccordionTrigger>What are my specializations ?</AccordionTrigger>
                         <AccordionContent>
-                            I specialize in backend development, with expertise in Express, Firebase, and other modern technologies. I am passionate about building scalable systems that can handle high traffic loads and can ensure optimal performance. My focus on backend development allows me to ensure that your application's server-side code is optimized for security, efficiency, and reliability.
+                            {"I specialize in backend development, with expertise in Express, Firebase, and other modern technologies. I am passionate about building scalable systems that can handle high traffic loads and can ensure optimal performance. My focus on backend development allows me to ensure that your application's server-side code is optimized for security, efficiency, and reliability."}
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>

@@ -17,7 +17,7 @@ function Header() {
                         <h3 className="text-sm font-medium leading-none">DevOps Enthusiast</h3>
                     </Link>
                     <div className="absolute right-0">
-                        <div className="items-start sm:items-center gap-3 sm:gap-4 flex flex-col sm:flex-row p-4 px-6 sm:p-0 bg-[#060a15] rounded-lg border sm:border-none sm:bg-none">
+                        <div className="items-start sm:items-center gap-3 sm:gap-4 flex flex-col sm:flex-row p-4 px-6 sm:p-0 bg-[#060a15] rounded-lg border sm:border-none sm:bg-transparent">
                             <Button variant="link" className="p-0 h-auto text-left"><Link href={"/about"}>About</Link></Button>
                             <Button variant="link" className="p-0 h-auto text-left"><a href="/resume.pdf" download>Resume</a></Button>
                             <Button variant="link" className="p-0 h-auto text-left"><Link href="#contactSec">Contact</Link></Button>

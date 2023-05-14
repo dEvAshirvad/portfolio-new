@@ -7,7 +7,7 @@ function Contact() {
         <div className="my-16 sm:my-20" id="contactSec">
             <Container>
                 <div className="mb-6">
-                    <H2>Let's talk about...</H2>
+                    <H2>{"Let's talk about..."}</H2>
                 </div>
                 <div className="flex flex-col">
                     <ul className="flex flex-wrap gap-2 sm:w-[80%]">

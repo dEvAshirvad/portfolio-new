@@ -26,8 +26,8 @@ function ProjectCard({ title, description, social, inprogres, pic }: any) {
                 <CardTitle className="mb-1 flex items-center justify-between">
                     <div>{title}</div>
                     <ul className="flex items-center gap-2">
-                        {social.map((e: any, ind: number) => {
-                            return <li><Link target="_blank" key={ind} href={e.link} className="flex items-center w-5">{socMap.find((el: any) => el.name === e.social).comp}</Link></li>
+                        {social.map((e: any, key: any) => {
+                            return <li key={key}><Link target="_blank" href={e.link} className="flex items-center w-5">{socMap.find((el: any) => el.name === e.social).comp}</Link></li>
                         })}
                     </ul>
                 </CardTitle>

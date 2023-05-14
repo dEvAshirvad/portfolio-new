@@ -16,8 +16,8 @@ function SnippetCard({ title, description, social }: any) {
             <CardFooter className="gap-4">
                 {/* <Button variant="link" className="p-0">Github</Button>
                 <Button variant="link" className="p-0">Website</Button> */}
-                {social.map((e: any) => {
-                    return <Link href={e.link}><Button variant="link" className="p-0 h-0">{e.social}</Button></Link>
+                {social.map((e: any, key: any) => {
+                    return <Link key={key} href={e.link}><Button variant="link" className="p-0 h-0">{e.social}</Button></Link>
                 })}
             </CardFooter>
         </Card>

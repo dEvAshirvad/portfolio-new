@@ -24,7 +24,7 @@ function Hero() {
                         </div>
                     </div>
                     <div className="sm:pl-6 flex flex-col justify-between">
-                        <H1>Hey, I'm Ashirvad. I'm a Student who is learning <br className="sm:hidden" />Full-Stack Development and DevOps</H1>
+                        <h1 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0">Hey, I am Ashirvad. A Student who is learning <br className="sm:hidden" /> Full-Stack Development and DevOps</h1>
                         <ul className="flex my-4 sm:my-0 gap-5">
                             <li>
                                 <Link target="_blank" href={"https://twitter.com/dEvAshirvad"} className="flex gap-2 socialUnderline">
@@ -55,7 +55,7 @@ function Hero() {
                 </div>
                 <div className="mt-4 mb-8 sm:my-10 flex justify-between">
                     <div className="sm:w-[72%]">
-                        <H3>A <span className="scroll-m-20 text-xl font-semibold text-white tracking-tight">Full-stack developer 👨‍💻</span> based out in Bhubaneswar, India. <span className="scroll-m-20 text-xl text-white font-semibold tracking-tight">Experienced in building optimized and highly performant 🚀 Web Applications.</span> Skilled in design and engineering of websites with <span className="scroll-m-20 text-xl font-semibold text-white tracking-tight">JavaScript, Next, Firebase, SQL, Figma and AWS.</span></H3>
+                        <h3 className='scroll-m-20 text-xl font-normal text-muted-foreground tracking-tight leading-normal'>A <span className="scroll-m-20 text-xl font-semibold text-white tracking-tight">Full-stack developer 👨‍💻</span> based out in Bhubaneswar, India. <span className="scroll-m-20 text-xl text-white font-semibold tracking-tight">Learning and building optimized and highly performant 🚀 Web Applications.</span> Skilled in design and engineering of websites with <span className="scroll-m-20 text-xl font-semibold text-white tracking-tight">JavaScript, Next, Firebase, Postgress, Express and AWS.</span></h3>
                     </div>
                     <p className="hidden sm:block sm:w-[20%] text-sm leading-tight">My adaptive learning and curiosity about technology positioned me unique in IT sector.</p>
                 </div>
