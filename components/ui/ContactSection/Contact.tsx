@@ -4,7 +4,7 @@ import { AlertDialogTrigger } from "../alert-dialog"
 
 function Contact() {
     return (
-        <div className="my-16 sm:my-20">
+        <div className="my-16 sm:my-20" id="contactSec">
             <Container>
                 <div className="mb-6">
                     <H2>Let's talk about...</H2>

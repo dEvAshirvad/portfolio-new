@@ -34,7 +34,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/ui/Container/Container.tsx"
+    "components/ui/Container/Container.tsx",
+    "components/ui/ProjectCard/ProjectCard.jsx"
   ],
   "exclude": [
     "node_modules"
