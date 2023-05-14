@@ -1,5 +1,6 @@
 import Container from "../Container/Container"
 import H2 from "../Typo/H2"
+import { AlertDialogTrigger } from "../alert-dialog"
 
 function Contact() {
     return (
@@ -61,7 +62,7 @@ function Contact() {
                     </ul>
                     <p className="my-8 w-[60%] sm:w-[30%] self-end">There is so much to talk about but i don’t know who you are so..<span className="font-bold">Let’s Know each other...</span></p>
                 </div>
-                <H2><input type="submit" value="hello@hellojicky.com" className="border-b-2 border-current" /></H2>
+                <AlertDialogTrigger><H2><input type="submit" value="hello@hellojicky.com" className="border-b-2 border-current" /></H2></AlertDialogTrigger>
             </Container>
         </div>
     )

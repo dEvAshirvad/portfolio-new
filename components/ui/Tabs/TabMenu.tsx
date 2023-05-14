@@ -13,28 +13,29 @@ function TabMenu() {
                         <TabsList className="mb-4">
                             <TabsTrigger value="account">Projects</TabsTrigger>
                             <TabsTrigger value="password">Blogs</TabsTrigger>
-                            <TabsTrigger value="snippets">Snippets</TabsTrigger>
+                            {/* <TabsTrigger value="snippets">Snippets</TabsTrigger> */}
                         </TabsList>
                         <Button className="py-0">See More</Button>
                     </div>
                     <TabsContent value="account">
-                        <ul className="flex flex-col gap-4 sm:flex-wrap  sm:gap-4">
+                        <ul className="grid gap-4 sm:grid-cols-3">
+                            <li><ProjectCard title="PortFolio" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi" social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                             <li><ProjectCard title="PortFolio" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi tempora pariatur modi qui iure, eos expedita praesentium, molestias debitis." social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                             <li><ProjectCard title="PortFolio" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi tempora pariatur modi qui iure, eos expedita praesentium, molestias debitis." social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                         </ul>
                     </TabsContent>
                     <TabsContent value="password">
-                        <ul className="flex flex-col gap-4 sm:flex-wrap sm:gap-4">
+                        <ul className="grid gap-4 sm:grid-cols-3">
                             <li><BlogCard title="Blog" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi tempora pariatur modi qui iure, eos expedita praesentium, molestias debitis." social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                             <li><BlogCard title="Blog" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi tempora pariatur modi qui iure, eos expedita praesentium, molestias debitis." social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                         </ul>
                     </TabsContent>
-                    <TabsContent value="snippets">
-                        <ul className="flex flex-col gap-4 sm:flex-wrap sm:gap-4">
+                    {/* <TabsContent value="snippets">
+                        <ul className="grid gap-4 sm:grid-cols-3">
                             <li><BlogCard title="PortFolio" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi tempora pariatur modi qui iure, eos expedita praesentium, molestias debitis." social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                             <li><BlogCard title="PortFolio" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum illum quae vero libero officiis molestiae corporis error nemo quasi tempora pariatur modi qui iure, eos expedita praesentium, molestias debitis." social={[{ social: "Github", link: "" }, { social: "Website", link: "" }]} /></li>
                         </ul>
-                    </TabsContent>
+                    </TabsContent> */}
                 </Tabs>
             </Container>
         </div>

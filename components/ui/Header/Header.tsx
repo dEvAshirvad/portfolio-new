@@ -1,6 +1,7 @@
 import Container from "../Container/Container"
 import { Button } from "../button"
 import { AlignJustify } from "lucide-react"
+import { SheetTrigger } from "../sheet"
 
 function Header() {
     return (
@@ -14,12 +15,15 @@ function Header() {
                         <h3 className="text-sm font-medium leading-none">DevOps Enthusiast</h3>
                     </div>
                     <div className="items-center hidden gap-4 sm:flex">
+                        <Button variant="link">About</Button>
                         <Button variant="link">Resume</Button>
                         <Button variant="link" className="p-0">Contact</Button>
                     </div>
-                    <div className="cursor-pointer p-2 rounded-xl border-2 sm:hidden">
-                        <AlignJustify />
-                    </div>
+                    <SheetTrigger asChild>
+                        <div className="cursor-pointer p-2 rounded-xl border-2 sm:hidden">
+                            <AlignJustify />
+                        </div>
+                    </SheetTrigger>
                 </div>
             </Container>
         </header>

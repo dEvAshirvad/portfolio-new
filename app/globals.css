@@ -84,7 +84,7 @@ input {
 }
 
 input[type=checkbox]:checked {
-  background-color: black
+  /* background-color: black */
 }
 
 @keyframes wave-animation {

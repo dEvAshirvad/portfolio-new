@@ -5,6 +5,7 @@ import wave from "../../../public/wave.png"
 import Link from "next/link"
 import { Instagram, Github, Twitter, LinkedinIcon } from "lucide-react"
 import H3 from "../Typo/H3"
+import profile from "../../../public/profile.jpg"
 
 function Hero() {
     return (
@@ -13,10 +14,12 @@ function Hero() {
                 <div className="flex flex-col sm:flex-row">
                     <div className="w-1/3 max-w-[9rem] relative mb-6 sm:m-0 aspect-square rounded-full bg-slate-400 before:absolute before:w-[95%] before: before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[#030711] before:aspect-square before:rounded-full">
                         {/* after:w-[40%] after:aspect-square after:absolute after:bottom-0 after:right-0 after:bg-[#030711] after:rounded-full */}
-                        <Image alt="" src={""} />
+                        <Image alt="" src={profile} className="absolute object-contain rounded-full w-[90%] -translate-x-1/2 left-1/2 top-1/2 -translate-y-1/2" />
                         <div className="w-[40%] aspect-square rounded-full absolute bottom-0 right-0 bg-[#030711]">
-                            <div className="p-3 border-[3px] border-slate-400 rounded-full">
-                                <Image alt="" src={wave} id="wave"></Image>
+                            <div className="p-1">
+                                <div className="p-2.5 border-[3px] border-slate-400 rounded-full">
+                                    <Image alt="" src={wave} id="wave"></Image>
+                                </div>
                             </div>
                         </div>
                     </div>
