@@ -16,7 +16,7 @@ function BlogCard({ title, description, social }: any) {
                 {/* <Button variant="link" className="p-0">Github</Button>
                 <Button variant="link" className="p-0">Website</Button> */}
                 {social.map((e: any) => {
-                    return <Link href={e.link}><Button variant="link" className="p-0 h-0">{e.social}</Button></Link>
+                    return <Link target="_blank" href={e.link}><Button variant="link" className="p-0 h-0">{e.social}</Button></Link>
                 })}
             </CardFooter>
         </Card>

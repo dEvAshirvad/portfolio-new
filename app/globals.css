@@ -145,6 +145,10 @@ input[type=checkbox]:checked {
   scale: 1.2
 }
 
+.socialIconn:hover {
+  scale: 1.2
+}
+
 @layer base {
   * {
     @apply border-border;

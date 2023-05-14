@@ -1,38 +1,41 @@
 import Link from "next/link"
-import { Button } from "../button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "../card"
 import { ExternalLink, Github } from "lucide-react"
-import assert from "assert"
 import { Badge } from "../badge"
+import Image from "next/image"
+// import swingbanner from ""
 
 const socMap: any = [
     {
         name: "Github",
-        comp: <Github />
+        comp: <Github className="socialIconn" />
     },
     {
         name: "Website",
-        comp: <ExternalLink />
+        comp: <ExternalLink className="socialIconn" />
     }
 ]
 
-function ProjectCard({ title, description, social, inprogres }: any) {
+function ProjectCard({ title, description, social, inprogres, pic }: any) {
     return (
-        <Card className="flex flex-col h-full">
-            <div className="relative aspect-video border rounded-t-lg">
-                {inprogres ? <Badge className="absolute bottom-0 right-0 mx-2 my-3 bg-green-600 text-white">In Progress</Badge> : null}
+        <Card className="flex flex-col">
+            <div className="relative">
+                {pic ? <img alt="" src={pic} className="relative w-full aspect-video border-b rounded-t-lg" /> : null}
             </div>
-            <CardHeader className="p-3.5">
+            <CardHeader className={pic ? "p-3.5" : "p-5"}>
                 <CardTitle className="mb-1 flex items-center justify-between">
                     <div>{title}</div>
                     <ul className="flex items-center gap-2">
                         {social.map((e: any, ind: number) => {
-                            return <li><Link key={ind} href={e.link} className="flex items-center w-5">{socMap.find((el: any) => el.name === e.social).comp}</Link></li>
+                            return <li><Link target="_blank" key={ind} href={e.link} className="flex items-center w-5">{socMap.find((el: any) => el.name === e.social).comp}</Link></li>
                         })}
                     </ul>
                 </CardTitle>
                 <CardDescription>{description}</CardDescription>
             </CardHeader>
+            <CardFooter className={pic ? "p-3.5 pb-5 pt-2" : "p-5 pt-2"}>
+                {inprogres ? <Badge className="bg-green-600 text-white">In Progress</Badge> : null}
+            </CardFooter>
         </Card>
     )
 }

@@ -18,13 +18,13 @@ function FaqSection() {
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Who am I ?</AccordionTrigger>
                         <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                            A Full-stack developer 👨‍💻 based out in Bhubaneswar, India. Experienced in building optimized and highly performant 🚀 Web Applications. Skilled in design and engineering of websites with JavaScript, Next, Firebase, SQL, Figma and AWS.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionTrigger>What are my specializations ?</AccordionTrigger>
                         <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                            I specialize in backend development, with expertise in Express, Firebase, and other modern technologies. I am passionate about building scalable systems that can handle high traffic loads and can ensure optimal performance. My focus on backend development allows me to ensure that your application's server-side code is optimized for security, efficiency, and reliability.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
